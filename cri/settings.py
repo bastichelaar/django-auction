@@ -14,7 +14,9 @@ MANAGERS = ADMINS
 import os
 
 SITE_ROOT = os.path.realpath(os.path.abspath(os.path.join(os.path.realpath(os.path.dirname(__file__)), '.')))
-MEDIA_ROOT = os.path.realpath(os.path.abspath(os.path.join(SITE_ROOT, 'media')))
+MEDIA_ROOT = '/app/media'
+STATIC_ROOT = '/app/static'
+STATIC_URL = '/static/'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -75,7 +77,8 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'lebay.apps.lebay',
     'uni_form',
-)
+    'django.contrib.staticfiles'
+    )
 
 import dj_database_url
 DATABASES = {'default': dj_database_url.parse(os.environ['POSTGRES_URL'])}
