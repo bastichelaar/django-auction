@@ -36,8 +36,6 @@ USE_I18N = False
 #SITE_URL = 'http://127.0.0.1:8000/'
 MEDIA_URL = '/media/'
 
-ADMIN_MEDIA_PREFIX = '/admin-media/'
-
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = "/"
 
