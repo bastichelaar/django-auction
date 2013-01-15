@@ -39,7 +39,7 @@
     {% ifequal auction_event.item.seller request.user.user %}
         <div class='info'>You are selling this item.</div>
     {% endifequal %}
-    <p><strong>Current Price: </strong>${{ auction_event.get_current_price }}</p>
+    <p><strong>Current Price: </strong>€{{ auction_event.get_current_price }}</p>
     
     <p><strong>Condition: </strong>{{ auction_event.item.get_condition }}</p>
     
