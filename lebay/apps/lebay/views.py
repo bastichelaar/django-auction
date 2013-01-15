@@ -113,7 +113,7 @@ def edit_seller_profile(request):
     if request.user.user.is_seller():
         seller = Seller.objects.get(user=request.user.user)
     else:
-        seller = Seller(user=request.user.user, paypal_email=request.user.email)
+        seller = Seller(user=request.user.user)
         seller.save()
 
     if request.method == 'POST':
