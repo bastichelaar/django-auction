@@ -15,7 +15,6 @@ import os
 
 SITE_ROOT = os.path.realpath(os.path.abspath(os.path.join(os.path.realpath(os.path.dirname(__file__)), '.')))
 MEDIA_ROOT = os.path.realpath(os.path.abspath(os.path.join(SITE_ROOT, 'media')))
-DB_ROOT = os.path.realpath(os.path.abspath(os.path.join(SITE_ROOT, 'db')))
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -32,13 +31,13 @@ SITE_ID = 1
 
 USE_I18N = False
 
-SITE_URL = 'http://127.0.0.1:8000/'
+#SITE_URL = 'http://127.0.0.1:8000/'
 MEDIA_URL = '%smedia/' % SITE_URL
 
 ADMIN_MEDIA_PREFIX = '/admin-media/'
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = SITE_URL
+LOGIN_REDIRECT_URL = "/"
 
 SECRET_KEY = '_s7to88u2ap$tr@-qpmk3ebk_mldwj0e2_4p(812+y7e$%rj%g'
 
