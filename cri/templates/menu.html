@@ -1,0 +1,7 @@
+<div id="menu">
+    <a href="{% url lebay_view_auction_events %}">Buy</a>
+{% if request.user.is_staff %}
+    <a href="{% url lebay_list_item %}">Sell</a>
+{% endif %}
+    <a href="{% url lebay_view_categories %}">Categories</a>
+</div>
