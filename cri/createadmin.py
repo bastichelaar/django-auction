@@ -1,5 +1,5 @@
 import os
-os.environ['DJANGO_SETTINGS_MODULE'] = 'store.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
 from django.contrib.auth.models import User
 u, created = User.objects.get_or_create(username='admin')
