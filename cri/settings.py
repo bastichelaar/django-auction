@@ -32,7 +32,7 @@ SITE_ID = 1
 USE_I18N = False
 
 #SITE_URL = 'http://127.0.0.1:8000/'
-MEDIA_URL = '%smedia/' % SITE_URL
+MEDIA_URL = '/media/'
 
 ADMIN_MEDIA_PREFIX = '/admin-media/'
 
