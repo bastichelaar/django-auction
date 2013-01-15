@@ -7,7 +7,7 @@
         <div class="contentitem{% if not forloop.last%} withbreak{% endif %}">
             <h3><a href="{% url lebay_view_auction_event auction_event.pk %}">{{ auction_event.item.title|title }}</a></h3>
             <strong>Condition: </strong>{{ auction_event.item.condition }}<br />
-            <strong>Price: </strong>${{ auction_event.get_current_price }}<br />
+            <strong>Price: </strong>€{{ auction_event.get_current_price }}<br />
             <strong>Time Remaining: </strong>{{ auction_event.get_time_until_end }}
             <div class="posted">Being sold by: <span>{{ auction_event.item.seller.user.username }}</span></div>
         </div>
